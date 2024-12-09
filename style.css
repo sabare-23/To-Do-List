@@ -101,6 +101,7 @@ button.edit {
 
     input[type="text"] {
         font-size: 1rem;
+        width: calc(105% - 20px);
     }
 
     button {
