@@ -22,9 +22,10 @@
 }
 function editTask(button) {
     const li = button.parentElement;
-    const newTask = prompt('Edit your task:', li);
-    if (newTask !== null && newTask  !== '') {
-        li.firstChild.textContent = newTask;
+    const currentTask = li.firstChild.textContent.trim();
+    const newTask = prompt('Edit your task:', currentTask);
+    if (newTask !== null && newTask.trim() !== '') {
+        li.firstChild.textContent = newTask.trim();
     }
 }
 
